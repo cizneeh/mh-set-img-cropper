@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>cizneeh/renovate-config:auto.json5"],
+  "enabledManagers": ["github-actions", "npm"],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "react",
+        "@types/react",
+        "react-dom",
+        "@types/react-dom"
+      ],
+      "groupName": "react"
+    },
+    {
+      "matchPackageNames": [
+        "@chakra-ui/react",
+        "@emotion/react",
+        "@emotion/styled",
+        "framer-motion"
+      ],
+      "groupName": "chakra"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "groupName": "major",
+      "automerge": false,
+      "assignees": ["cizneeh"],
+      "assigneesSampleSize": 1
+    }
+  ],
+  "postUpdateOptions": ["pnpmDedupe"]
+}
