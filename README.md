@@ -1,3 +1,3 @@
-# ts-react-template
+# MH Set Image Cropper
 
-ぼくのさいきょうのテンプレート
+wip
