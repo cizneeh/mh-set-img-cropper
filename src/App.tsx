@@ -1,22 +1,12 @@
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  ChakraProvider,
-  chakra,
-  Text,
-} from '@chakra-ui/react'
+import { ChakraProvider, chakra } from '@chakra-ui/react'
+
+import { FileComp } from './components/File'
 
 export const App = () => {
   return (
     <ChakraProvider>
-      <chakra.main my={0} mx={'auto'} width="min(90%, 40rem)">
-        <Card>
-          <CardHeader>何か</CardHeader>
-          <CardBody>
-            <Text>何か</Text>
-          </CardBody>
-        </Card>
+      <chakra.main my={0} mx={'auto'} width="min(90%, 80rem)">
+        <FileComp />
       </chakra.main>
     </ChakraProvider>
   )
