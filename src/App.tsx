@@ -1,12 +1,27 @@
-import { ChakraProvider, chakra } from '@chakra-ui/react'
+import { Box, ChakraProvider, chakra } from '@chakra-ui/react'
 
-import { FileComp } from './components/File'
+import { Footer } from './components/Footer'
+import { Header } from './components/Header'
+import { ImageSelect } from './components/ImageSelect'
+import { ImagesGrid } from './components/ImagesGrid'
 
 export const App = () => {
   return (
     <ChakraProvider>
-      <chakra.main my={0} mx={'auto'} width="min(90%, 80rem)">
-        <FileComp />
+      <Header />
+      <chakra.main
+        my={0}
+        mx={'auto'}
+        width="min(90%, 80rem)"
+        display={'flex'}
+        flexDirection={'column'}
+        gap={10}
+      >
+        <ImageSelect />
+        <Box minHeight={'70vh'}>
+          <ImagesGrid />
+        </Box>
+        <Footer />
       </chakra.main>
     </ChakraProvider>
   )
