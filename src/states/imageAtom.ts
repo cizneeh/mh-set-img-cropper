@@ -1,7 +1,7 @@
 import { atom, useAtom, useAtomValue, useSetAtom } from 'jotai'
 
 import { cropImage, identifyImage, renderToImage } from '../logic'
-import { isWide } from '../logic/isWide'
+import { isWide } from '../logic/utils/isWide'
 
 export const imageURLsAtom = atom<string[]>([])
 export const useImageURLs = () => useAtom(imageURLsAtom)
@@ -16,8 +16,6 @@ export const useDeleteImageURL = () =>
       ),
     ),
   )
-
-export const croppedImageURLsAtom = atom<string[]>([])
 
 export const imageElementsAtom = atom((get) =>
   Promise.all(get(imageURLsAtom).map((url) => renderToImage(url))),

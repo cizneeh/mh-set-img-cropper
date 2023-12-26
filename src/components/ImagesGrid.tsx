@@ -1,12 +1,13 @@
-import { SimpleGrid, Spinner } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 import { Suspense } from 'react'
 
 import { useReadCroppedImage } from '../states/imageAtom'
 
 import { ImageCard } from './ImageCard'
+import { MSpinner } from './MSpinner'
 
 export const ImagesGrid = () => (
-  <Suspense fallback={<Spinner />}>
+  <Suspense fallback={<MSpinner />}>
     <_ImageGrid />
   </Suspense>
 )

@@ -1,10 +1,12 @@
-import { Card, Text } from '@chakra-ui/react'
+import { Card, CardProps, Text } from '@chakra-ui/react'
 import { useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 
 import { useImageURLs } from '../states/imageAtom'
 
-export const ImageSelect = () => {
+type Props = Omit<CardProps, 'children'>
+
+export const ImageSelect = (props: Props) => {
   const [imageURLs, setImageURLs] = useImageURLs()
 
   const onDrop = useCallback(
@@ -26,6 +28,7 @@ export const ImageSelect = () => {
   // TODO: 色とテーマとisDragActiveとポインターとちゃんとやる
   return (
     <Card
+      {...props}
       {...getRootProps()}
       textAlign={'center'}
       bg={isDragActive ? 'gray.500' : undefined}

@@ -17,7 +17,7 @@ export const App = () => {
         flexDirection={'column'}
         gap={10}
       >
-        <ImageSelect />
+        <ImageSelect mt={4} />
         <Box minHeight={'70vh'}>
           <ImagesGrid />
         </Box>
