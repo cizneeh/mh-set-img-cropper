@@ -17,7 +17,7 @@
     "fix:prettier": "pnpm lint:prettier --write"
   },
   "engines": {
-    "node": "20.13.0"
+    "node": "20.13.1"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
