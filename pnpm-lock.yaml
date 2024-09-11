@@ -51,7 +51,7 @@ devDependencies:
     version: 6.21.0(eslint@8.57.0)(typescript@5.6.2)
   '@vitejs/plugin-react':
     specifier: ^4.3.1
-    version: 4.3.1(vite@5.4.3)
+    version: 4.3.1(vite@5.4.4)
   '@vitest/ui':
     specifier: ^1.6.0
     version: 1.6.0(vitest@1.6.0)
@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^5.6.2
     version: 5.6.2
   vite:
-    specifier: ^5.4.3
-    version: 5.4.3
+    specifier: ^5.4.4
+    version: 5.4.4
   vitest:
     specifier: ^1.6.0
     version: 1.6.0(@vitest/ui@1.6.0)
@@ -2201,7 +2201,7 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-react@4.3.1(vite@5.4.3):
+  /@vitejs/plugin-react@4.3.1(vite@5.4.4):
     resolution: {integrity: sha512-m/V2syj5CuVnaxcUJOQRel/Wr31FFXRFlnOoq1TVtkCxsY5veGMTEmpWHndrhB2U8ScHtCQB1e+4hWYExQc6Lg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2212,7 +2212,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.24.1(@babel/core@7.24.5)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.4.3
+      vite: 5.4.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4877,7 +4877,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.1
       picocolors: 1.0.1
-      vite: 5.4.3
+      vite: 5.4.4
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4890,8 +4890,8 @@ packages:
       - terser
     dev: true
 
-  /vite@5.4.3:
-    resolution: {integrity: sha512-IH+nl64eq9lJjFqU+/yrRnrHPVTlgy42/+IzbOdaFDVlyLgI/wDlf+FCobXLX1cT0X5+7LMyH1mIy2xJdLfo8Q==}
+  /vite@5.4.4:
+    resolution: {integrity: sha512-RHFCkULitycHVTtelJ6jQLd+KSAAzOgEYorV32R2q++M6COBjKJR6BxqClwp5sf0XaBDjVMuJ9wnNfyAJwjMkA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -4971,7 +4971,7 @@ packages:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.3
-      vite: 5.4.3
+      vite: 5.4.4
       vite-node: 1.6.0
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
