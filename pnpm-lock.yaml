@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@chakra-ui/react':
     specifier: ^2.10.4
-    version: 2.10.4(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(@types/react@18.3.18)(framer-motion@11.17.0)(react-dom@18.3.1)(react@18.3.1)
+    version: 2.10.4(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(@types/react@18.3.18)(framer-motion@11.18.0)(react-dom@18.3.1)(react@18.3.1)
   '@emotion/react':
     specifier: ^11.14.0
     version: 11.14.0(@types/react@18.3.18)(react@18.3.1)
@@ -15,8 +15,8 @@ dependencies:
     specifier: ^11.14.0
     version: 11.14.0(@emotion/react@11.14.0)(@types/react@18.3.18)(react@18.3.1)
   framer-motion:
-    specifier: ^11.17.0
-    version: 11.17.0(react-dom@18.3.1)(react@18.3.1)
+    specifier: ^11.18.0
+    version: 11.18.0(react-dom@18.3.1)(react@18.3.1)
   jotai:
     specifier: ^2.11.0
     version: 2.11.0(@types/react@18.3.18)(react@18.3.1)
@@ -283,7 +283,7 @@ packages:
       react: 18.3.1
     dev: false
 
-  /@chakra-ui/react@2.10.4(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(@types/react@18.3.18)(framer-motion@11.17.0)(react-dom@18.3.1)(react@18.3.1):
+  /@chakra-ui/react@2.10.4(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(@types/react@18.3.18)(framer-motion@11.18.0)(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-XyRWnuZ1Uw7Mlj5pKUGO5/WhnIHP/EOrpy6lGZC1yWlkd0eIfIpYMZ1ALTZx4KPEdbBaes48dgiMT2ROCqLhkA==}
     peerDependencies:
       '@emotion/react': '>=11'
@@ -301,7 +301,7 @@ packages:
       '@popperjs/core': 2.11.8
       '@zag-js/focus-visible': 0.31.1
       aria-hidden: 1.2.3
-      framer-motion: 11.17.0(react-dom@18.3.1)(react@18.3.1)
+      framer-motion: 11.18.0(react-dom@18.3.1)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-fast-compare: 3.2.2
@@ -2173,8 +2173,8 @@ packages:
       is-callable: 1.2.7
     dev: true
 
-  /framer-motion@11.17.0(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-uTNLH9JPMD3ad14WBt3KYRTR+If4tGPLgKTKTIIPaEBMkvazs6EkWNcmCh65qA/tyinOqIbQiuCorXX0qQsNoQ==}
+  /framer-motion@11.18.0(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-Vmjl5Al7XqKHzDFnVqzi1H9hzn5w4eN/bdqXTymVpU2UuMQuz9w6UPdsL9dFBeH7loBlnu4qcEXME+nvbkcIOw==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
