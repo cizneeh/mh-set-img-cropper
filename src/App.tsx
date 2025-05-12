@@ -12,7 +12,7 @@ export const App = () => {
       <chakra.main
         my={0}
         mx={'auto'}
-        width="min(90%, 80rem)"
+        width="min(95%, 80rem)"
         display={'flex'}
         flexDirection={'column'}
         gap={10}
