@@ -17,7 +17,8 @@
     "fix:prettier": "npm run lint:prettier -- --write"
   },
   "engines": {
-    "node": "20.19.2"
+    "node": "20.19.2",
+    "npm": "10.x"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.10.9",
@@ -47,6 +48,5 @@
     "typescript": "^5.8.3",
     "vite": "^5.4.19",
     "vitest": "^1.6.1"
-  },
-  "packageManager": "npm@10"
+  }
 }
