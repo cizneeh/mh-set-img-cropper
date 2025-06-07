@@ -13,8 +13,8 @@
     "lint:eslint": "eslint src",
     "lint:prettier": "prettier . --check",
     "fix": "run-s fix:*",
-    "fix:eslint": "pnpm lint:eslint --fix",
-    "fix:prettier": "pnpm lint:prettier --write"
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "fix:prettier": "npm run lint:prettier -- --write"
   },
   "engines": {
     "node": "20.19.2"
@@ -48,5 +48,5 @@
     "vite": "^5.4.19",
     "vitest": "^1.6.1"
   },
-  "packageManager": "pnpm@8.15.9"
+  "packageManager": "npm@10"
 }
