@@ -27,6 +27,11 @@
       "automerge": false,
       "assignees": ["cizneeh"],
       "assigneesSampleSize": 1
+    },
+    {
+      "matchPackageNames": ["node"],
+      "matchManagers": ["npm", "nvm", "nvmrc", "nodenv", "npm-engines"],
+      "enabled": false
     }
   ],
   "postUpdateOptions": ["npmDedupe"]
