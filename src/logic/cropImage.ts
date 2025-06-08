@@ -1,4 +1,4 @@
-import { ImageCategory, getCropParams } from './imageCategory'
+import { type ImageCategory, getCropParams } from './imageCategory'
 
 /**
  * Extract an icon from given context.

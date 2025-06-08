@@ -1,6 +1,6 @@
 import {
   IconButton,
-  IconButtonProps,
+  type IconButtonProps,
   Tooltip,
   useColorMode,
 } from '@chakra-ui/react'

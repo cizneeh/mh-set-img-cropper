@@ -1,6 +1,6 @@
-import { chakra, Text, Flex } from '@chakra-ui/react'
+import { Flex, Text, chakra } from '@chakra-ui/react'
 
-import { XIcon, GithubIcon } from './icons'
+import { GithubIcon, XIcon } from './icons'
 
 export const Footer = () => {
   return (
