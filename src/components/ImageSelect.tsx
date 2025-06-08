@@ -1,10 +1,10 @@
-import { Card, type CardProps, Text } from '@chakra-ui/react'
+import { Card, type CardRootProps, Text } from '@chakra-ui/react'
 import { useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 
 import { useImageURLs } from '../states/imageAtom'
 
-type Props = Omit<CardProps, 'children'>
+type Props = Omit<CardRootProps, 'children'>
 
 export const ImageSelect = (props: Props) => {
   const [imageURLs, setImageURLs] = useImageURLs()
@@ -29,7 +29,7 @@ export const ImageSelect = (props: Props) => {
 
   // TODO: 色とテーマとisDragActiveとポインターとちゃんとやる
   return (
-    <Card
+    <Card.Root
       {...props}
       {...getRootProps()}
       textAlign={'center'}
@@ -40,6 +40,6 @@ export const ImageSelect = (props: Props) => {
       <Text>または</Text>
       <Text>クリックしてファイルを選択</Text>
       <input type="file" hidden {...inputProps} size={undefined} />
-    </Card>
+    </Card.Root>
   )
 }
