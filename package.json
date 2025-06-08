@@ -8,11 +8,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "lint": "run-p lint:*",
-    "lint:typecheck": "tsc --noEmit",
-    "lint:biome": "biome check .",
-    "fix": "run-s fix:*",
-    "fix:biome": "npm run lint:biome -- --apply"
+    "lint": "tsc --noEmit && biome check .",
+    "fix": "biome check . --write ."
   },
   "engines": {
     "node": "20.19.2",
