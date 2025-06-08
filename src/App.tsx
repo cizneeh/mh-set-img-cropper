@@ -4,6 +4,7 @@ import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { ImageSelect } from './components/ImageSelect'
 import { ImagesGrid } from './components/ImagesGrid'
+import { ResultImage } from './components/ResultImage'
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
         gap={10}
       >
         <ImageSelect mt={4} />
+        <ResultImage />
         <Box minHeight={'70vh'}>
           <ImagesGrid />
         </Box>
