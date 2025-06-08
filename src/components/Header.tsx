@@ -1,6 +1,4 @@
-import { Divider, Flex, Heading, chakra } from '@chakra-ui/react'
-
-import { ColorSwitchButton } from './icons/ColorSwitchButton'
+import { Flex, Heading, Separator, chakra } from '@chakra-ui/react'
 import { GithubIcon } from './icons/GithubIcon'
 import { XIcon } from './icons/XTwitterIcon'
 
@@ -17,11 +15,10 @@ export const Header = () => (
         MH Set Image Cropper
       </Heading>
       <Flex alignItems="center" justifyContent="space-between" gap="4">
-        <ColorSwitchButton size={'sm'} />
         <XIcon size="2rem" />
         <GithubIcon size="2rem" />
       </Flex>
     </Flex>
-    <Divider />
+    <Separator />
   </chakra.header>
 )
