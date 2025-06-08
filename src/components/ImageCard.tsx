@@ -1,7 +1,7 @@
 import {
   Alert,
   AlertDescription,
-  AlertIcon,
+  AlertIndicator,
   Card,
   CardBody,
   CardHeader,
@@ -19,7 +19,7 @@ export const ImageCard = memo(
     const deleteImage = useDeleteImageURL()
 
     return (
-      <Card>
+      <Card.Root>
         <CardHeader
           display={'flex'}
           alignItems={'center'}
@@ -42,8 +42,8 @@ export const ImageCard = memo(
         >
           <img width={440} src={img.original} alt="original" />
           {img.isError ? (
-            <Alert status="error" borderRadius={6}>
-              <AlertIcon />
+            <Alert.Root status="error" borderRadius={6}>
+              <AlertIndicator />
               <AlertDescription>
                 {img.error === 'failedToRender'
                   ? '画像の読み込みに失敗しました'
@@ -53,12 +53,12 @@ export const ImageCard = memo(
                       ? '画像の識別に失敗しました。使用する画像の注意点： TODO: リンクを貼る'
                       : '不明なエラーです'}
               </AlertDescription>
-            </Alert>
+            </Alert.Root>
           ) : (
             <img width={220} src={img.cropped} alt="cropped" />
           )}
         </CardBody>
-      </Card>
+      </Card.Root>
     )
   },
   (prev, next) => prev.img.original === next.img.original,
