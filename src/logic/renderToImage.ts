@@ -1,6 +1,6 @@
 /*
- * Render given url as an HTMLImageEmenet.
- * resolves to null if loading fails.
+ * Render given URL as an HTMLImageElement.
+ * Resolves to null if loading fails.
  */
 export function renderToImage(
   imageUrl: string,
