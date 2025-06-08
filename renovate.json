@@ -29,5 +29,5 @@
       "assigneesSampleSize": 1
     }
   ],
-  "postUpdateOptions": ["pnpmDedupe"]
+  "postUpdateOptions": ["npmDedupe"]
 }
