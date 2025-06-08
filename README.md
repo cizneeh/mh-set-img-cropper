@@ -1,3 +1,8 @@
 # MH Set Image Cropper
 
-wip
+WIP
+
+## Development
+
+This project uses **Biome** for linting and formatting. Run `npm run lint` to
+check the code and `npm run fix` to automatically apply fixes.

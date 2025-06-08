@@ -40,7 +40,7 @@ export const ImageCard = memo(
           gap={4}
           alignItems={'center'}
         >
-          <img width={440} src={img.original} />
+          <img width={440} src={img.original} alt="original" />
           {img.isError ? (
             <Alert status="error" borderRadius={6}>
               <AlertIcon />
@@ -55,7 +55,7 @@ export const ImageCard = memo(
               </AlertDescription>
             </Alert>
           ) : (
-            <img width={220} src={img.cropped} />
+            <img width={220} src={img.cropped} alt="cropped" />
           )}
         </CardBody>
       </Card>

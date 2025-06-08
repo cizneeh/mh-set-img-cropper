@@ -10,11 +10,9 @@
     "test:ui": "vitest --ui",
     "lint": "run-p lint:*",
     "lint:typecheck": "tsc --noEmit",
-    "lint:eslint": "eslint src",
-    "lint:prettier": "prettier . --check",
+    "lint:biome": "biome check .",
     "fix": "run-s fix:*",
-    "fix:eslint": "npm run lint:eslint -- --fix",
-    "fix:prettier": "npm run lint:prettier -- --write"
+    "fix:biome": "npm run lint:biome -- --apply"
   },
   "engines": {
     "node": "20.19.2",
@@ -35,16 +33,10 @@
   "devDependencies": {
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.5.1",
     "@vitest/ui": "^1.6.1",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-react": "^7.37.5",
+    "@biomejs/biome": "^1.5.0",
     "npm-run-all2": "^5.0.2",
-    "prettier": "^3.5.3",
     "typescript": "^5.8.3",
     "vite": "^5.4.19",
     "vitest": "^1.6.1"

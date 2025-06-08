@@ -14,7 +14,7 @@ export const ImageSelect = (props: Props) => {
       const urls = Array.from(files).map((file) => URL.createObjectURL(file))
       setImageURLs([...imageURLs, ...urls])
     },
-    [imageURLs],
+    [imageURLs, setImageURLs],
   )
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -24,6 +24,8 @@ export const ImageSelect = (props: Props) => {
     multiple: true,
     onDrop,
   })
+
+  const inputProps = getInputProps()
 
   // TODO: 色とテーマとisDragActiveとポインターとちゃんとやる
   return (
@@ -37,7 +39,7 @@ export const ImageSelect = (props: Props) => {
       <Text>画像をドラッグ & ドロップ</Text>
       <Text>または</Text>
       <Text>クリックしてファイルを選択</Text>
-      <input type="file" hidden {...(getInputProps(), { size: undefined })} />
+      <input type="file" hidden {...inputProps} size={undefined} />
     </Card>
   )
 }
