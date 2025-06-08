@@ -12,8 +12,7 @@
     "fix": "biome check . --write ."
   },
   "engines": {
-    "node": "22.x",
-    "npm": "11.x"
+    "node": "22.x"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.10.9",
