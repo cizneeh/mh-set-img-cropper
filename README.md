@@ -1,3 +1,3 @@
 # MH Set Image Cropper
 
-wip
+A work-in-progress image cropping utility built with React.
