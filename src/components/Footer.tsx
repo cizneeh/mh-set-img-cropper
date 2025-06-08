@@ -13,7 +13,7 @@ export const Footer = () => {
           <GithubIcon size={'2rem'} />
         </address>
       </Flex>
-      <Text align={'center'} mt={4}>
+      <Text textAlign={'center'} mt={4}>
         <small>&copy; 2023 ZenCieh</small>
       </Text>
     </chakra.footer>

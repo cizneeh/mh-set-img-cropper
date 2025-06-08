@@ -1,4 +1,4 @@
-import { Box, ChakraProvider, chakra } from '@chakra-ui/react'
+import { Box, ChakraProvider, chakra, defaultSystem } from '@chakra-ui/react'
 
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
@@ -7,7 +7,7 @@ import { ImagesGrid } from './components/ImagesGrid'
 
 export const App = () => {
   return (
-    <ChakraProvider>
+    <ChakraProvider value={defaultSystem}>
       <Header />
       <chakra.main
         my={0}
