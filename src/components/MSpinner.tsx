@@ -1,4 +1,4 @@
-import { Center, CenterProps, Spinner } from '@chakra-ui/react'
+import { Center, type CenterProps, Spinner } from '@chakra-ui/react'
 
 type Props = Omit<CenterProps, 'children'>
 

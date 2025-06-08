@@ -1,4 +1,4 @@
-import { Card, CardProps, Text } from '@chakra-ui/react'
+import { Card, type CardProps, Text } from '@chakra-ui/react'
 import { useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 

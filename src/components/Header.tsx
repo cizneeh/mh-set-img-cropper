@@ -1,4 +1,4 @@
-import { chakra, Divider, Flex, Heading } from '@chakra-ui/react'
+import { Divider, Flex, Heading, chakra } from '@chakra-ui/react'
 
 import { ColorSwitchButton } from './icons/ColorSwitchButton'
 import { GithubIcon } from './icons/GithubIcon'

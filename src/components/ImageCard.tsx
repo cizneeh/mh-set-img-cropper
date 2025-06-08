@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react'
 import { memo } from 'react'
 
-import { CroppedImage, useDeleteImageURL } from '../states/imageAtom'
+import { type CroppedImage, useDeleteImageURL } from '../states/imageAtom'
 
 import { DeleteIcon } from './icons'
 
