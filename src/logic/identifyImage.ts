@@ -1,4 +1,4 @@
-import { Entry, ImageCategory } from './imageCategory'
+import { type Entry, ImageCategory } from './imageCategory'
 import { exhaustiveCheck } from './utils/exhaustiveCheck'
 
 /**
@@ -127,8 +127,29 @@ type Coordinate = {
 function checkColor(pixel: Pixel, threshold: Pixel): boolean {
   return (
     // prettier-ignore
-    pixel.r >= threshold.r-10 && pixel.r <= threshold.r+10 &&
-    pixel.g >= threshold.g-10 && pixel.g <= threshold.g+10 &&
-    pixel.b >= threshold.b-10 && pixel.b <= threshold.b+10
+    pixel.r >= threshold.r - 10 &&
+    pixel.r <= threshold.r + 10 &&
+    pixel.g >= threshold.g - 10 &&
+    pixel.g <= threshold.g + 10 &&
+    pixel.b >= threshold.b - 10 &&
+    pixel.b <= threshold.b + 10
+  )
+}
+)
+}
+  )
+}
+  )
+}
+  )
+}
+  )
+}
+  )
+}
+  )
+}
+  )
+}
   )
 }

@@ -1,7 +1,7 @@
 import {
   Alert,
   AlertDescription,
-  AlertIcon,
+  AlertIndicator,
   Button,
   Card,
   CardBody,
@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { memo } from 'react'
 
-import { CroppedImage, useDeleteImageURL } from '../states/imageAtom'
+import { type CroppedImage, useDeleteImageURL } from '../states/imageAtom'
 
 import { DeleteIcon } from './icons'
 
@@ -21,7 +21,7 @@ export const ImageCard = memo(
     const deleteImage = useDeleteImageURL()
 
     return (
-      <Card>
+      <Card.Root>
         <CardHeader>
           <HStack justifyContent={'space-between'}>
             <Heading as="h2" size={'md'}>
@@ -36,10 +36,10 @@ export const ImageCard = memo(
         </CardHeader>
         <CardBody>
           <VStack gap={4}>
-            <img width={440} src={img.original} />
+            <img width={440} src={img.original} alt="original" />
             {img.isError ? (
-              <Alert status="error" borderRadius={6}>
-                <AlertIcon />
+              <Alert.Root status="error" borderRadius={6}>
+                <AlertIndicator />
                 <AlertDescription>
                   {img.error === 'failedToRender'
                     ? '画像の読み込みに失敗しました'
@@ -49,9 +49,9 @@ export const ImageCard = memo(
                         ? '画像の識別に失敗しました。使用する画像の注意点： TODOリンク'
                         : 'unknown'}
                 </AlertDescription>
-              </Alert>
+              </Alert.Root>
             ) : (
-              <img width={220} src={img.cropped} />
+              <img width={220} src={img.cropped} alt="cropped" />
             )}
 
             <a href={img.isError ? '' : img.cropped} download>
@@ -59,7 +59,7 @@ export const ImageCard = memo(
             </a>
           </VStack>
         </CardBody>
-      </Card>
+      </Card.Root>
     )
   },
   (prev, next) => prev.img.original === next.img.original,
