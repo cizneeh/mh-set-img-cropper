@@ -1,13 +1,4 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  VStack,
-  Alert,
-  AlertIcon,
-  AlertDescription,
-  Button,
-} from '@chakra-ui/react'
+import { Button, Card } from '@chakra-ui/react'
 import { Suspense } from 'react'
 
 import { useResultImageURL } from '../states/imageAtom'
@@ -25,15 +16,15 @@ export const _ResultImage = () => {
 
   return (
     <>
-      <Card>
-        <CardHeader>result</CardHeader>
-        <CardBody>
-          <img width={1920} src={resultImage} />
-        </CardBody>
+      <Card.Root>
+        <Card.Header>result</Card.Header>
+        <Card.Body>
+          <img width={1920} src={resultImage} alt="result" />
+        </Card.Body>
         <a href={resultImage} download>
           <Button>Download</Button>
         </a>
-      </Card>
+      </Card.Root>
     </>
   )
 }
