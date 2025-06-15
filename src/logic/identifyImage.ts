@@ -135,21 +135,3 @@ function checkColor(pixel: Pixel, threshold: Pixel): boolean {
     pixel.b <= threshold.b + 10
   )
 }
-)
-}
-  )
-}
-  )
-}
-  )
-}
-  )
-}
-  )
-}
-  )
-}
-  )
-}
-  )
-}
