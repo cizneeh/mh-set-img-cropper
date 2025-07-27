@@ -15,10 +15,10 @@
     "node": "22.x"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.20.0",
+    "@chakra-ui/react": "^3.23.0",
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "framer-motion": "^12.16.0",
+    "@emotion/styled": "^11.14.1",
+    "framer-motion": "^12.23.9",
     "jotai": "^2.12.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
