@@ -1,11 +1,23 @@
-export type ImageCategory = 'skills'
-// | 'skills_list'
-// | 'armor_head'
-// | 'armor_chest'
-// | 'armor_arms'
-// | 'armor_waist'
-// | 'armor_legs'
-// | 'charm'
+export type Entry = 'World' | 'Rise'
+
+export type ImageCategory =
+  | 'skills'
+  | 'armor_head'
+  | 'armor_chest'
+  | 'armor_arms'
+  | 'armor_waist'
+  | 'armor_legs'
+  | 'charm'
+
+export const ImageCategory = [
+  'skills',
+  'armor_head',
+  'armor_chest',
+  'armor_arms',
+  'armor_waist',
+  'armor_legs',
+  'charm',
+] as const
 
 export type Area = {
   sx: number
