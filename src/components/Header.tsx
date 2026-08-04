@@ -4,13 +4,7 @@ import { XIcon } from './icons/XTwitterIcon'
 
 export const Header = () => (
   <chakra.header px={4}>
-    <Flex
-      as="nav"
-      py="4"
-      justifyContent="space-between"
-      alignItems="center"
-      px={4}
-    >
+    <Flex as="nav" py="4" justifyContent="space-between" px={4}>
       <Heading as="h1" size="2xl">
         MH Set Image Cropper
       </Heading>
